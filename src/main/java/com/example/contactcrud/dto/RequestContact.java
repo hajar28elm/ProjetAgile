@@ -10,7 +10,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 public class RequestContact {
     private String name;
-    private int tele;
+    private String tele;
     private String Email;
     private String message;
 
