@@ -1,4 +1,4 @@
-package com.example.summerschool.models;
+package com.example.contactcrud.models;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;

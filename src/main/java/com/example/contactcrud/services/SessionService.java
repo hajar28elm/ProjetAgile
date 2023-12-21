@@ -1,10 +1,10 @@
-package com.example.summerschool.services;
+package com.example.contactcrud.services;
 
-import com.example.summerschool.dto.SaveSessionDto;
-import com.example.summerschool.models.Organizer;
-import com.example.summerschool.models.Session;
-import com.example.summerschool.repositories.OrganizerRepository;
-import com.example.summerschool.repositories.SessionRepository;
+import com.example.contactcrud.dto.SaveSessionDto;
+import com.example.contactcrud.models.Organizer;
+import com.example.contactcrud.models.Session;
+import com.example.contactcrud.repositories.OrganizerRepository;
+import com.example.contactcrud.repositories.SessionRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

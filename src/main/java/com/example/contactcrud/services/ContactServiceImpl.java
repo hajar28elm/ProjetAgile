@@ -25,13 +25,13 @@ public class ContactServiceImpl implements  ContactService {
 
    private ContactDAO contactDAO;
    private ModelMapper modelMapper;
-
+    private JavaMailSender javaMailSender;
 
    @Autowired
-    public ContactServiceImpl(ContactDAO contactDAO, ModelMapper modelMapper, JavaMailSender javaMailSender) {
+    public ContactServiceImpl(ContactDAO contactDAO, ModelMapper modelMapper) {
         this.contactDAO = contactDAO;
         this.modelMapper = modelMapper;
-       this.javaMailSender = javaMailSender;
+
    }
 
 
@@ -82,7 +82,7 @@ public class ContactServiceImpl implements  ContactService {
     private String fromEmail;
 
 
-    private JavaMailSender javaMailSender;
+
     @Override
     public String sendMail(MultipartFile[] file, String to, String[] cc, String subject, String body) {
         try {
