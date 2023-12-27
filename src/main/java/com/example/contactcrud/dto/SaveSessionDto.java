@@ -1,4 +1,4 @@
-package com.example.summerschool.dto;
+package com.example.contactcrud.dto;
 
 import jakarta.persistence.ElementCollection;
 import jakarta.persistence.ManyToOne;

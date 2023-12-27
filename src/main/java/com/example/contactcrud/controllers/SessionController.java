@@ -1,9 +1,9 @@
-package com.example.summerschool.controllers;
+package com.example.contactcrud.controllers;
 
 
-import com.example.summerschool.dto.SaveSessionDto;
-import com.example.summerschool.models.Session;
-import com.example.summerschool.services.SessionService;
+import com.example.contactcrud.dto.SaveSessionDto;
+import com.example.contactcrud.models.Session;
+import com.example.contactcrud.services.SessionService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -11,6 +11,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/Session")
+@CrossOrigin(origins = "http://localhost:3000")
 public class SessionController {
 
     @Autowired
